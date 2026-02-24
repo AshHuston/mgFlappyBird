@@ -1,0 +1,2 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"E:/code/MonoGameFlappyBird/Content/bird1.png","E:/code/MonoGameFlappyBird/Content/bin/bird1.xnb","TextureProcessor","Texture2DContent",12370,7429,0.1028367
