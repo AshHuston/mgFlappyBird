@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using MonoGameFlappyBird.GameObjects;
 
 namespace MonoGameFlappyBird;
 
@@ -10,6 +11,7 @@ public class Game1 : Game
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
     private Bird _bird;
+    private GameAssets _assets;
 
     public Game1()
     {
@@ -29,8 +31,13 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-        Texture2D birdTex = Content.Load<Texture2D>("bird1");
-        _bird = new Bird(birdTex, new Vector2(200, 200));
+        _assets = new GameAssets();
+
+        _assets.Bird1 = Content.Load<Texture2D>("bird1");
+        _assets.Bird2 = Content.Load<Texture2D>("bird2");
+        _assets.Bird3 = Content.Load<Texture2D>("bird3");
+        _assets.Pipe = Content.Load<Texture2D>("pipe");
+        _bird = new Bird(_assets, new Vector2(200, 200));
 
         // TODO: use this.Content to load your game content here
     }
@@ -40,8 +47,8 @@ public class Game1 : Game
         // if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
         //     Exit();
 
-        float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
-        _bird.Update(dt);
+        //float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
+        _bird.Update(gameTime);
         // TODO: Add your update logic here
 
         base.Update(gameTime);
@@ -51,8 +58,9 @@ public class Game1 : Game
     {
         GraphicsDevice.Clear(Color.CornflowerBlue);
 
+        _spriteBatch.Begin();
         _bird.Draw(_spriteBatch);
-        // TODO: Add your drawing code here
+        _spriteBatch.End();
 
         base.Draw(gameTime);
     }

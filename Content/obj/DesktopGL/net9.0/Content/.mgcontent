@@ -4,9 +4,21 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>E:/code/MonoGameFlappyBird/Content/bird1.png</File>
+    <File>/Users/anthonyhuston/code/mgFlappyBird/Content/bg.png</File>
+    <File>/Users/anthonyhuston/code/mgFlappyBird/Content/bird1.png</File>
+    <File>/Users/anthonyhuston/code/mgFlappyBird/Content/bird2.png</File>
+    <File>/Users/anthonyhuston/code/mgFlappyBird/Content/bird3.png</File>
+    <File>/Users/anthonyhuston/code/mgFlappyBird/Content/ground.png</File>
+    <File>/Users/anthonyhuston/code/mgFlappyBird/Content/pipe.png</File>
+    <File>/Users/anthonyhuston/code/mgFlappyBird/Content/restart.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>
