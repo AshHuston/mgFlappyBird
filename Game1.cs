@@ -9,6 +9,7 @@ public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
+    private Bird _bird;
 
     public Game1()
     {
@@ -20,7 +21,7 @@ public class Game1 : Game
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
-        Console.WriteLine("INIT");
+        
         base.Initialize();
     }
 
@@ -28,14 +29,19 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
+        Texture2D birdTex = Content.Load<Texture2D>("bird1");
+        _bird = new Bird(birdTex, new Vector2(200, 200));
+
         // TODO: use this.Content to load your game content here
     }
 
     protected override void Update(GameTime gameTime)
     {
-        if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-            Exit();
+        // if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+        //     Exit();
 
+        float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
+        _bird.Update(dt);
         // TODO: Add your update logic here
 
         base.Update(gameTime);
@@ -43,8 +49,9 @@ public class Game1 : Game
 
     protected override void Draw(GameTime gameTime)
     {
-        GraphicsDevice.Clear(Color.CrornflowerBlue);
+        GraphicsDevice.Clear(Color.CornflowerBlue);
 
+        _bird.Draw(_spriteBatch);
         // TODO: Add your drawing code here
 
         base.Draw(gameTime);

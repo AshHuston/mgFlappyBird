@@ -32,3 +32,4 @@ E:\code\MonoGameFlappyBird\obj\Debug\net9.0\refint\MonoGameFlappyBird.dll
 E:\code\MonoGameFlappyBird\obj\Debug\net9.0\MonoGameFlappyBird.pdb
 E:\code\MonoGameFlappyBird\obj\Debug\net9.0\MonoGameFlappyBird.genruntimeconfig.cache
 E:\code\MonoGameFlappyBird\obj\Debug\net9.0\ref\MonoGameFlappyBird.dll
+E:\code\MonoGameFlappyBird\bin\Debug\net9.0\Content\bird1.xnb
