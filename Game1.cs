@@ -11,6 +11,7 @@ public class Game1 : Game
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
     private Bird _bird;
+    private World _world;
     private GameAssets _assets;
 
     public Game1()
@@ -37,7 +38,8 @@ public class Game1 : Game
         _assets.Bird2 = Content.Load<Texture2D>("bird2");
         _assets.Bird3 = Content.Load<Texture2D>("bird3");
         _assets.Pipe = Content.Load<Texture2D>("pipe");
-        _bird = new Bird(_assets, new Vector2(200, 200));
+        //_bird = new Bird(_assets, new Vector2(200, 200));
+        _world = new World(_assets);
 
         // TODO: use this.Content to load your game content here
     }
@@ -48,9 +50,9 @@ public class Game1 : Game
         //     Exit();
 
         //float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
-        _bird.Update(gameTime);
+        //_bird.Update(gameTime);
         // TODO: Add your update logic here
-
+        _world.Update(gameTime);
         base.Update(gameTime);
     }
 
@@ -59,7 +61,7 @@ public class Game1 : Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
 
         _spriteBatch.Begin();
-        _bird.Draw(_spriteBatch);
+        _world.Draw(_spriteBatch);
         _spriteBatch.End();
 
         base.Draw(gameTime);

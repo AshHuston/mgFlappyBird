@@ -28,6 +28,6 @@ public class Bird : Entity
 
     public override void Draw(SpriteBatch spriteBatch)
     {
-        spriteBatch.Draw(_texture, _position, Color.Blue);
+        spriteBatch.Draw(_texture, _position, Color.White);
     }
 }

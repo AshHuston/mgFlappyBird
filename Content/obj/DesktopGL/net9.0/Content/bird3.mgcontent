@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>/Users/anthonyhuston/code/mgFlappyBird/Content/bird3.png</SourceFile>
-  <SourceTime>2026-02-24T08:59:44.4983805-05:00</SourceTime>
-  <DestFile>/Users/anthonyhuston/code/mgFlappyBird/Content/bin/DesktopGL/Content/bird3.xnb</DestFile>
-  <DestTime>2026-02-24T15:47:00.3548601-05:00</DestTime>
+  <SourceFile>E:/code/MonoGameFlappyBird/Content/bird3.png</SourceFile>
+  <SourceTime>2026-02-23T13:36:35.0140804-05:00</SourceTime>
+  <DestFile>E:/code/MonoGameFlappyBird/Content/bin/DesktopGL/Content/bird3.xnb</DestFile>
+  <DestTime>2026-02-24T22:16:39.9757891-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2025-10-20T10:25:32-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

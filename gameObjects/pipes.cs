@@ -12,10 +12,11 @@ public class Pipe : Entity
     Vector2 _position;
     float _velocity;
 
-    public Pipe(Texture2D texture, Vector2 startPos)
+    GameAssets assets;
+
+    public Pipe(GameAssets _assets, Vector2 startPos)
     {
-        _texture = texture;
-        _position = startPos;
+        assets = _assets;
     }
 
     public override void Update(GameTime gameTime)
