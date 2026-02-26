@@ -6,14 +6,20 @@ namespace MonoGameFlappyBird.GameObjects;
 
 public class World
 {
-    public List<Entity> gameEntities = new List<Entity>();
+    private List<Entity> gameEntities = new List<Entity>();
+    public List<Entity> entitiesToAdd = new List<Entity>();
     GameAssets assets;
 
     public World(GameAssets _assets)
     {
         assets = _assets;
         gameEntities.Add(new Bird(assets, new Vector2(200, 200)));
-        gameEntities.Add(new (assets, new Vector2(200, 200)));
+        gameEntities.Add(new PipeSpawner(this, assets, new Vector2(1000, 200)));
+    }
+
+    public void Add(Entity entity)
+    {
+        entitiesToAdd.Add(entity);
     }
 
     public void Update(GameTime gameTime) {
@@ -21,6 +27,9 @@ public class World
         {
             e.Update(gameTime);
         }
+
+        gameEntities.AddRange(entitiesToAdd);
+        entitiesToAdd.Clear();
     }
 
     public void Draw(SpriteBatch spriteBatch) {

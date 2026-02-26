@@ -20,7 +20,8 @@ public class Bird : Entity
     public override void Update(GameTime gameTime)
     {
         float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
-        _velocity += 900f * dt; // gravity
+        const int gravity = 900;
+        _velocity += gravity * dt; // gravity
         _position.Y += _velocity * dt;
 
         if (Keyboard.GetState().IsKeyDown(Keys.Space)){ _velocity = -350f; }// flap

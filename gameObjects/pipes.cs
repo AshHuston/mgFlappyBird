@@ -10,26 +10,55 @@ public class Pipe : Entity
 {
     Texture2D _texture;
     Vector2 _position;
-    float _velocity;
-
     GameAssets assets;
+    bool flipped;
+    int spacing;
+    float rotation;
 
-    public Pipe(GameAssets _assets, Vector2 startPos)
+    public Pipe(World world, GameAssets _assets, Vector2 startPos, bool _flipped = false)
     {
         assets = _assets;
+        _texture = _assets.Pipe;
+        _position = startPos;
+        flipped = _flipped;
+
+        if (flipped) {
+            Random random = new Random();
+            spacing = random.Next(100, 350); 
+            _position.Y -= spacing;
+            rotation = MathHelper.ToRadians(180f);
+        } else{
+            world.entitiesToAdd.Add(new Pipe(world, assets, _position, true));
+        }
     }
 
     public override void Update(GameTime gameTime)
     {
-        float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
-        _velocity += 900f * dt; // gravity
-        _position.Y += _velocity * dt;
-
-        if (Keyboard.GetState().IsKeyDown(Keys.Space)){ _velocity = -350f; }// flap
+        _position.X--;
     }
 
     public override void Draw(SpriteBatch spriteBatch)
     {
-        spriteBatch.Draw(_texture, _position, Color.White);
+        if (!flipped) {
+            spriteBatch.Draw(_texture, _position, Color.White);
+        } else {
+
+            Vector2 origin = new Vector2(
+                0,//_texture.Width ,
+                _texture.Height
+            );            
+
+            spriteBatch.Draw(
+                _texture,
+                _position,
+                null,
+                Color.White,
+                MathF.PI/9999999,
+                origin,
+                1f,
+                SpriteEffects.FlipVertically,
+                0f
+           );
+        }
     }
 }
