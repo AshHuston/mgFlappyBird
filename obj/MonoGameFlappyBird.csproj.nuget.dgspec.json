@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/anthonyhuston/code/mgFlappyBird/MonoGameFlappyBird.csproj": {}
+    "E:\\code\\MonoGameFlappyBird\\MonoGameFlappyBird.csproj": {}
   },
   "projects": {
-    "/Users/anthonyhuston/code/mgFlappyBird/MonoGameFlappyBird.csproj": {
+    "E:\\code\\MonoGameFlappyBird\\MonoGameFlappyBird.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anthonyhuston/code/mgFlappyBird/MonoGameFlappyBird.csproj",
+        "projectUniqueName": "E:\\code\\MonoGameFlappyBird\\MonoGameFlappyBird.csproj",
         "projectName": "MonoGameFlappyBird",
-        "projectPath": "/Users/anthonyhuston/code/mgFlappyBird/MonoGameFlappyBird.csproj",
-        "packagesPath": "/Users/anthonyhuston/.nuget/packages/",
-        "outputPath": "/Users/anthonyhuston/code/mgFlappyBird/obj/",
+        "projectPath": "E:\\code\\MonoGameFlappyBird\\MonoGameFlappyBird.csproj",
+        "packagesPath": "C:\\Users\\Ash Huston\\.nuget\\packages\\",
+        "outputPath": "E:\\code\\MonoGameFlappyBird\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/anthonyhuston/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ash Huston\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/opt/homebrew/Cellar/dotnet/10.0.103/libexec/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -71,11 +70,15 @@
               "version": "[9.0.13, 9.0.13]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[9.0.13, 9.0.13]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.13, 9.0.13]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
               "version": "[9.0.13, 9.0.13]"
             }
           ],
@@ -84,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/10.0.103/libexec/sdk/10.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonoGameFlappyBird")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bb28e75198fde725c6dc64611e11a6dd674d70e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+903da5529f311cd045e8707cb0bd2d66643013dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonoGameFlappyBird")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonoGameFlappyBird")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

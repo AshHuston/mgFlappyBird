@@ -1,8 +1,8 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"/Users/anthonyhuston/code/mgFlappyBird/Content/bg.png","/Users/anthonyhuston/code/mgFlappyBird/Content/bin/DesktopGL/Content/bg.xnb","TextureProcessor","Texture2DContent",40026,2654293,0.198607
-"/Users/anthonyhuston/code/mgFlappyBird/Content/bird1.png","/Users/anthonyhuston/code/mgFlappyBird/Content/bin/DesktopGL/Content/bird1.xnb","TextureProcessor","Texture2DContent",12370,7429,0.001505
-"/Users/anthonyhuston/code/mgFlappyBird/Content/bird2.png","/Users/anthonyhuston/code/mgFlappyBird/Content/bin/DesktopGL/Content/bird2.xnb","TextureProcessor","Texture2DContent",11540,7429,0.001386
-"/Users/anthonyhuston/code/mgFlappyBird/Content/bird3.png","/Users/anthonyhuston/code/mgFlappyBird/Content/bin/DesktopGL/Content/bird3.xnb","TextureProcessor","Texture2DContent",11636,7429,0.000953
-"/Users/anthonyhuston/code/mgFlappyBird/Content/ground.png","/Users/anthonyhuston/code/mgFlappyBird/Content/bin/DesktopGL/Content/ground.xnb","TextureProcessor","Texture2DContent",7389,1161301,0.010549
-"/Users/anthonyhuston/code/mgFlappyBird/Content/pipe.png","/Users/anthonyhuston/code/mgFlappyBird/Content/bin/DesktopGL/Content/pipe.xnb","TextureProcessor","Texture2DContent",4452,174805,0.003708
-"/Users/anthonyhuston/code/mgFlappyBird/Content/restart.png","/Users/anthonyhuston/code/mgFlappyBird/Content/bin/DesktopGL/Content/restart.xnb","TextureProcessor","Texture2DContent",882,20245,0.001437
+"E:/code/MonoGameFlappyBird/Content/bg.png","E:/code/MonoGameFlappyBird/Content/bin/DesktopGL/Content/bg.xnb","TextureProcessor","Texture2DContent",40026,2654293,0.2365413
+"E:/code/MonoGameFlappyBird/Content/bird1.png","E:/code/MonoGameFlappyBird/Content/bin/DesktopGL/Content/bird1.xnb","TextureProcessor","Texture2DContent",12370,7429,0.0140711
+"E:/code/MonoGameFlappyBird/Content/bird2.png","E:/code/MonoGameFlappyBird/Content/bin/DesktopGL/Content/bird2.xnb","TextureProcessor","Texture2DContent",11540,7429,0.012681
+"E:/code/MonoGameFlappyBird/Content/bird3.png","E:/code/MonoGameFlappyBird/Content/bin/DesktopGL/Content/bird3.xnb","TextureProcessor","Texture2DContent",11636,7429,0.0100366
+"E:/code/MonoGameFlappyBird/Content/ground.png","E:/code/MonoGameFlappyBird/Content/bin/DesktopGL/Content/ground.xnb","TextureProcessor","Texture2DContent",7389,1161301,0.0313436
+"E:/code/MonoGameFlappyBird/Content/pipe.png","E:/code/MonoGameFlappyBird/Content/bin/DesktopGL/Content/pipe.xnb","TextureProcessor","Texture2DContent",4452,174805,0.0175682
+"E:/code/MonoGameFlappyBird/Content/restart.png","E:/code/MonoGameFlappyBird/Content/bin/DesktopGL/Content/restart.xnb","TextureProcessor","Texture2DContent",882,20245,0.0079

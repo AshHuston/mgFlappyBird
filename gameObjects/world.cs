@@ -14,7 +14,7 @@ public class World
     {
         assets = _assets;
         gameEntities.Add(new Bird(assets, new Vector2(200, 200)));
-        gameEntities.Add(new PipeSpawner(this, assets, new Vector2(1000, 200)));
+        gameEntities.Add(new PipeSpawner(this, assets, new Vector2(1900, 360)));
     }
 
     public void Add(Entity entity)

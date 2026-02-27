@@ -14,6 +14,7 @@ public class Pipe : Entity
     bool flipped;
     int spacing;
     float rotation;
+    int speed = 5;
 
     public Pipe(World world, GameAssets _assets, Vector2 startPos, bool _flipped = false)
     {
@@ -24,7 +25,7 @@ public class Pipe : Entity
 
         if (flipped) {
             Random random = new Random();
-            spacing = random.Next(100, 350); 
+            spacing = random.Next(125, 350); 
             _position.Y -= spacing;
             rotation = MathHelper.ToRadians(180f);
         } else{
@@ -34,7 +35,7 @@ public class Pipe : Entity
 
     public override void Update(GameTime gameTime)
     {
-        _position.X--;
+        _position.X -= speed;
     }
 
     public override void Draw(SpriteBatch spriteBatch)
