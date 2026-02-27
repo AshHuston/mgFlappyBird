@@ -5,9 +5,6 @@ namespace MonoGameFlappyBird.GameObjects;
 
 public class PipeSpawner : Entity
 {
-    World world;
-    Vector2 _position;
-    GameAssets assets;
     int framesPerSpawn;
 
     public PipeSpawner(World _world, GameAssets _assets, Vector2 startPos)

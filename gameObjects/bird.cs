@@ -7,8 +7,6 @@ namespace MonoGameFlappyBird.GameObjects;
 
 public class Bird : Entity
 {
-    Texture2D _texture;
-    Vector2 _position;
     float _velocity;
 
     public Bird(GameAssets _assets, Vector2 startPos)

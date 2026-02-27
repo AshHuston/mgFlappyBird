@@ -3,26 +3,26 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using MonoGameFlappyBird;
+using MonoGameFlappyBird.Functions;
+using MonoGameFlappyBird.Inputs;
 
 namespace MonoGameFlappyBird.GameObjects;
 
 public class Pipe : Entity
 {
-    Texture2D _texture;
-    Vector2 _position;
-    GameAssets assets;
     bool flipped;
     int spacing;
     float rotation;
-    int speed = 5;
+    int speed = 3;
+    Color _color = Color.White;
 
-    public Pipe(World world, GameAssets _assets, Vector2 startPos, bool _flipped = false)
+    public Pipe(World _world, GameAssets _assets, Vector2 startPos, bool _flipped = false)
     {
         assets = _assets;
+        world = _world;
         _texture = _assets.Pipe;
         _position = startPos;
         flipped = _flipped;
-
         if (flipped) {
             Random random = new Random();
             spacing = random.Next(125, 350); 
@@ -36,6 +36,14 @@ public class Pipe : Entity
     public override void Update(GameTime gameTime)
     {
         _position.X -= speed;
+
+        if ( EntityFunctions.SpriteClicked(this, world._inputManager.IsLeftClick()) ) {
+            _color = Color.Red;
+        }
+
+        if ( EntityFunctions.SpriteClicked(this, world._inputManager.IsRightClick()) ) {
+            _color = Color.White;
+        }
     }
 
     public override void Draw(SpriteBatch spriteBatch)
@@ -53,7 +61,7 @@ public class Pipe : Entity
                 _texture,
                 _position,
                 null,
-                Color.White,
+                _color,
                 MathF.PI/9999999,
                 origin,
                 1f,
